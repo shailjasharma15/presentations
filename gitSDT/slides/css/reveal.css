@@ -42,7 +42,7 @@ body {
   overflow: auto; }
 
 body {
-  position: relative;
+  position: left;
   line-height: 1;
   background-color: #fff;
   color: #000; }
