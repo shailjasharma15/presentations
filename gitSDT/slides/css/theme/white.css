@@ -16,7 +16,7 @@ body {
 
 .reveal {
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
   color: #222; }
 
@@ -28,7 +28,7 @@ body {
 .reveal .slides > section,
 .reveal .slides > section > section {
   line-height: 1;
-  font-weight: 12; }
+  font-weight: 14; }
 
 /*********************************************
  * HEADERS
