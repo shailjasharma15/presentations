@@ -27,8 +27,8 @@ body {
 
 .reveal .slides > section,
 .reveal .slides > section > section {
-  line-height: 1.3;
-  font-weight: inherit; }
+  line-height: 1;
+  font-weight: 12; }
 
 /*********************************************
  * HEADERS
@@ -109,7 +109,7 @@ body {
 .reveal ol ol,
 .reveal ol ul {
   display: block;
-  margin-left: 40px; }
+  margin-left: 20px; }
 
 .reveal dt {
   font-weight: bold; }
