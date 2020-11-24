@@ -39,10 +39,10 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow: auto; }
 
 body {
-  position: relative;
+  position: left;
   line-height: 1;
   background-color: #fff;
   color: #000; }
@@ -293,7 +293,7 @@ html:-moz-full-screen-ancestor {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   -ms-touch-action: none;
       touch-action: none; }
 
@@ -308,7 +308,7 @@ html:-moz-full-screen-ancestor {
   margin: auto;
   overflow: visible;
   z-index: 1;
-  text-align: center;
+  text-align: left;
   -webkit-perspective: 600px;
           perspective: 600px;
   -webkit-perspective-origin: 50% 40%;
