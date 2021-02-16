@@ -2,221 +2,236 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
 
-<title>GITHUB CAMPUS PROGRAM</title>
+  <title>GITHUB CAMPUS PROGRAM</title>
 
-<meta name="description" content="GITHUB CAMPUS PROGRAM">
-<meta name="author" content="H S Rai">
+  <meta name="description" content="GITHUB CAMPUS PROGRAM">
+  <meta name="author" content="H S Rai">
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-<link rel="stylesheet" href="css/reveal.css">
-<link rel="stylesheet" href="css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
 
-<!-- Code syntax highlighting
+  <!-- Code syntax highlighting
 <link rel="stylesheet" href="lib/css/zenburn.css">
 
 <!-- Printing and PDF exports -->
-<script>
-var link = document.createElement( 'link' );
-link.rel = 'stylesheet';
-link.type = 'text/css';
-link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-document.getElementsByTagName( 'head' )[0].appendChild( link );
-</script>
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 
-<style>
-.reveal .logo{
-border: none;
-box-shadow: none;
-max-width: 280px;
-max-height: 150px;
-display: inline-block;
-margin: 0.5em 1em;
-vertical-align: middle;
-}
-.reveal .footnote {
-font-size: 0.5em;
-position: fixed;
-bottom: 0;
-text-shadow: 0px 0px 5px black;
-}
+  <style>
+    .reveal .logo {
+      border: none;
+      box-shadow: none;
+      max-width: 280px;
+      max-height: 150px;
+      display: inline-block;
+      margin: 0.5em 1em;
+      vertical-align: middle;
+    }
 
-.reveal .footnote a {
-color: white;
-text-decoration: underline;
-}
+    .reveal .footnote {
+      font-size: 0.5em;
+      position: fixed;
+      bottom: 0;
+      text-shadow: 0px 0px 5px black;
+    }
 
-.reveal .has-dark-background  a{
-color: #eee;
-text-decoration: underline;
-}
+    .reveal .footnote a {
+      color: white;
+      text-decoration: underline;
+    }
 
-.reveal .pad-top {
-margin-top: 1.25em;
-}
+    .reveal .has-dark-background a {
+      color: #eee;
+      text-decoration: underline;
+    }
 
-.reveal section img{
-border: 0px;
-box-shadow: none;
-background: none;
-}
-.reveal section img.logo{
-max-width: 200px;
-}
+    .reveal .pad-top {
+      margin-top: 1.25em;
+    }
 
-.overview section.has-dark-background h2,
-.overview section.has-dark-background h3,
-.overview section.has-dark-background a,
-.overview section.has-dark-background p{
-color: rgb(0, 0, 0) !important;
-}
+    .reveal section img {
+      border: 0px;
+      box-shadow: none;
+      background: none;
+    }
 
-.text-shadow,
-.text-shadow h1,
-.text-shadow h2,
-.text-shadow h3{
-text-shadow: 0px 0px 6px rgb(14, 241, 147);
-}
-.text-shadow-lite,
-.text-shadow-lite h1,
-.text-shadow-lite h2,
-.text-shadow-lite h3{
-text-shadow: 0px 0px 10px #1c3d01;
-}
+    .reveal section img.logo {
+      max-width: 200px;
+    }
 
-.reveal iframe.bg-iframe{
-background-color: black;
-position: fixed;
-height: 100vh;
-width: 100vw;
-max-width: 100%;
-max-height: 100%;
-margin-left: 0%;
-margin-right: 0%;
-margin-top: 24%;
-z-index: -1;
-top: 0px;
-bottom: 0px;
-left: 0px;
-right: 0px;
-}
+    .overview section.has-dark-background h2,
+    .overview section.has-dark-background h3,
+    .overview section.has-dark-background a,
+    .overview section.has-dark-background p {
+      color: rgb(0, 0, 0) !important;
+    }
 
-.reveal img{
-vertical-align: middle;
-}
+    .text-shadow,
+    .text-shadow h1,
+    .text-shadow h2,
+    .text-shadow h3 {
+      text-shadow: 0px 0px 6px rgb(14, 241, 147);
+    }
 
-.reveal .margin-top{
-margin-top: 48px;
-}
+    .text-shadow-lite,
+    .text-shadow-lite h1,
+    .text-shadow-lite h2,
+    .text-shadow-lite h3 {
+      text-shadow: 0px 0px 10px #1c3d01;
+    }
 
-.reveal .col-6{
-width: 50%;
-/* float: left; */
-display: inline-block;
-}
+    .reveal iframe.bg-iframe {
+      background-color: black;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      max-width: 100%;
+      max-height: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+      margin-top: 24%;
+      z-index: -1;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+    }
 
-.sample-frame{
-border-collapse: collapse;
-}
-.sample-frame tr td{
-width: 80px;
-height: 80px;
-background: white;
-padding: 0px;
-border: 1px #bbb solid;
-}
-.diff-frame tr td{
-background: rgba(255, 255, 255, 0.0)
-}
-.sample-frame .dark{
-background: rgba(100, 100, 100, 1);
-}
-.sample-frame .diff{
-background: red;
-}
-.reveal table.sample-frame tr:last-child td{
-border-bottom: 1px #bbb solid;
-}
-.heading{
-             display: flex;
-color: aqua;
-}
-.reveal .blur-bg.slide-background{
--webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(2px);
-}
+    .reveal img {
+      vertical-align: middle;
+    }
 
-.reveal em + h3{
-margin-top: 20px;
-}
+    .reveal .margin-top {
+      margin-top: 48px;
+    }
 
-.reveal tr,
-.reveal table td{
-border-bottom: 0px !important;
-color: rgba(255,255,255, 0.8);
-}
-            .logo{
-height: 300px;
-}
+    .reveal .col-6 {
+      width: 50%;
+      /* float: left; */
+      display: inline-block;
+    }
 
-</style>
+    .sample-frame {
+      border-collapse: collapse;
+    }
 
-<!--[if lt IE 9]>
+    .sample-frame tr td {
+      width: 80px;
+      height: 80px;
+      background: white;
+      padding: 0px;
+      border: 1px #bbb solid;
+    }
+
+    .diff-frame tr td {
+      background: rgba(255, 255, 255, 0.0)
+    }
+
+    .sample-frame .dark {
+      background: rgba(100, 100, 100, 1);
+    }
+
+    .sample-frame .diff {
+      background: red;
+    }
+
+    .reveal table.sample-frame tr:last-child td {
+      border-bottom: 1px #bbb solid;
+    }
+
+    .heading {
+      display: flex;
+      color: aqua;
+    }
+
+    .reveal .blur-bg.slide-background {
+      -webkit-filter: blur(3px);
+      -moz-filter: blur(3px);
+      -o-filter: blur(3px);
+      -ms-filter: blur(3px);
+      filter: blur(2px);
+    }
+
+    .reveal em+h3 {
+      margin-top: 20px;
+    }
+
+    .reveal tr,
+    .reveal table td {
+      border-bottom: 0px !important;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .logo {
+      height: 300px;
+    }
+
+    .gndec-logo{
+      filter: hue-rotate(85deg);
+    }
+  </style>
+
+  <!--[if lt IE 9]>
 <script src="lib/js/html5shiv.js"></script>
 <![endif]-->
 </head>
 
 <body>
 
-<div class="reveal">
+  <div class="reveal">
 
-<!-- Any section element inside of this container is displayed as a slide -->
-<div class="slides" class="white" >
-<section  data-auto-animate data-background-image="/Users/mahinmittal/presentations/announcemnt/slides/img/crystalline.gif"  class="text-shadow white" >
-<div class="text-shadow white">
-<ul  >
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides" class="white">
+      <section  data-auto-animate
+        data-background-image="/Users/mahinmittal/presentations/announcemnt/slides/img/crystalline.gif"
+         class="text-shadow white">
+        <div class="text-shadow white">
+          <ul>
+            <img  class="r-stretch"   src="img/giphy.gif"  height="150" width="150">
+          </ul>
+          <h7> <br>✨ Guru Nanak Dev Engineering College Have joined hands with github Experts and brought opportunity to improve your GitHub skills. ✨ </h7>
+        </div>
+        <ul>
+          <img class="r-stretch gndec-logo" src="img/gndec.png"  height="350" width="310">
+        </ul>
+        <ul>
+          <img src="img/handshake-32.gif" height="150px" width="200px">
+        </ul>
+        <ul>
 
-<img  class="r-stretch"   src="img/giphy.gif"  height="150" width="150"> 
- 
-</ul> 
-
-</div>
-<ul >
-    <img class="r-stretch" src="img/gndec.png"  height="350" width="310"> 
-</ul>   
-<ul>
-<img src="img/handshake-32.gif" height="150px" width="200px">
-</ul>
-<ul  >
-
-<img  class="r-stretch"   src="img/git.png"  height="300" width="300"> 
- 
-</ul>                               
-  </section>
-  
-<section data-markdown  data-nofront='true' data-background-color="white" class="text-shadow white" >
-<div class="heading" >
-
+          <img  class="r-stretch"   src="img/git.png"  height="300" width="300">
+        </ul>
+         
+      </section>
+       
+      <section data-markdown  data-nofront='true' data-background-color="white" class="text-shadow white">
+        <div class="heading">
 ### Dear Students!
 ## ⭐ Pride Moment ⭐
 
-### GNDEC is providing you an opportunity to improve your Document Management, Workflow skill, through GitHub Experts. Presenting GitHub Campus Program to boost your career.
+### GNDEC is providing you an opportunity to improve your skills through GitHub Experts.
+### Presenting GitHub Campus Program to enhance workflow and document management skills.
 
-<!-- ### Guru Nanak Dev Engineering College distuingshed for great opportunity of GitHub Campus Program.
+          <!-- ### Guru Nanak Dev Engineering College distuingshed for great opportunity of GitHub Campus Program.
 ## GitHub Campus Program, provides us with a package of technical tools, which are not aproachable to layman. -->
 
 
-</section>
+      </section>
 
-<!-- <section data-markdown data-background="#000" data-nofront='true' class="text-shadow white">
+      <!-- <section data-markdown data-background="#000" data-nofront='true' class="text-shadow white">
 
 # GitHub Teacher Toolbox
 
@@ -226,37 +241,37 @@ height: 300px;
 
 </section> -->
 
-<section data-markdown data-background-color="white" data-nofront='true' class="text-shadow white">
+      <section data-markdown data-background-color="white" data-nofront='true' class="text-shadow white">
 
 ## Welcome ~~Drinks~~ Events
 
 - ### Workshop: Jump start to Version Control System
 - ### Hackathon: Show off your geekiness
 
-</section>
-<section data-markdown data-background-color="white" data-nofront='true' class="text-shadow white">
+      </section>
+      <section data-markdown data-background-color="white" data-nofront='true' class="text-shadow white">
 
 ## 🔑 KEY BENEFITS
-<!-- - ### Free access to GitHub Enterprise Server and GitHub Enterprise Cloud for every department. -->
+        <!-- - ### Free access to GitHub Enterprise Server and GitHub Enterprise Cloud for every department. -->
 
 ## Exclusive access to
 
 - ### Developer Pack
 - ### Education-specific swag and many other new features.
 
-<!-- - ### Teacher training to master Git and GitHub with our Campus Advisors program -->
+        <!-- - ### Teacher training to master Git and GitHub with our Campus Advisors program -->
 
-</section>
+      </section>
 
-<section data-markdown data-background-color="white" data-nofront='true' class="text-shadow white">
+      <section data-markdown data-background-color="white" data-nofront='true' class="text-shadow white">
 
 ## Student Developer Pack
 
-### will give you access to the best developer tools to give you experiential learning, otherwise access to those real world tools cost one heavily. 
+### will give you access to the best developer tools to give you experiential learning, otherwise access to those real world tools cost one heavily.
 
-</section>
+      </section>
 
-<!-- <section data-markdown data-background="#000" data-nofront='true' class="text-shadow white">
+      <!-- <section data-markdown data-background="#000" data-nofront='true' class="text-shadow white">
 
 ## Topics
 
@@ -266,7 +281,7 @@ height: 300px;
 <<<<<<< HEAD
 </section> -->
 
-<!--<section data-markdown data-background="#000" data-nofront='true' class="text-shadow white">
+      <!--<section data-markdown data-background="#000" data-nofront='true' class="text-shadow white">
 >>>>>>> bb4374f4b231d6f05a139cacc6d85dd49ab440d8
 
 ## Dates
@@ -277,50 +292,56 @@ timings wold be announced as per schedule
 
 </section>-->
 
-<section data-markdown data-background-color="white" data-nofront='true' class="text-shadow white">
+      <section data-markdown data-background-color="white" data-nofront='true' class="text-shadow white">
 
 ## Become GitHub Campus Expert
 
 ### to build the tech community at GNDEC with training and support from GitHub, and get benefitted in
 
-- ### public speaking, technical, writing, community leadership, Document Versioing and Management and software development skills
+- #### Public speaking
+- #### Technical writing
+- #### Community leadership
+- #### Document Versioning and Management and software development skills
 
 ### that will be a contribution towards campus improvement.
 
 
-</section> 
+      </section>
 
 
-<!-- ## Hackathons 💻
+      <!-- ## Hackathons 💻
 - ### Chance to organize a hackathon in college campus.
 - ### For first-time hackathons, GitHub will help you ship your first event with a $1,000 grant through our friends at Major League Hacking. -->
-</section>
+      </section>
 
-<section data-markdown  data-background-color="white" data-nofront='true'class="text-shadow white" >
+      <section data-markdown  data-background-color="white" data-nofront='true' class="text-shadow white">
 
 ##  What will Civil / Mechanical students get?
-#### All will learn to manage document revision and management:(Code) ≡ (Design documents, process specification, inspection reports, resume)
+#### All will learn to manage document revision and management: (Code) ≡ (Design documents, process specification, inspection reports, resume)
+If code is important to CSE/IT, then design documents, process specification, inspection reports, resume is important to Civil and Mechanical Engineers.
 
-</section>
+      </section>
 
-<section data-markdown  data-background-color="white" data-nofront='true'class="text-shadow white" >
+      <section data-markdown  data-background-color="white" data-nofront='true' class="text-shadow white">
 
 ##  ➕ Requirements for access
 
-- ## GNDE's Internet access ID and github account
+- ## GNDEC's email id and github account
 
 
- </section>
-  
-<section data-markdown data-background-image="/Users/mahinmittal/presentations/announcemnt/slides/img/crystalline.gif" data-background-color="white" data-nofront='true'class="text-shadow white" >
+         </section>
+
+      <section data-markdown
+        data-background-image="/Users/mahinmittal/presentations/announcemnt/slides/img/crystalline.gif"
+         data-background-color="white" data-nofront='true' class="text-shadow white">
 
 ## 📖 Enroll yourself in this event and get a kickstart 🚀 to your git skills.
 
 
- </section>
- 
+         </section>
+       
 
-<!-- 
+      <!-- 
 <section data-markdown data-background="#000" data-nofront='true' class="text-shadow white">
 
 
@@ -332,48 +353,49 @@ timings wold be announced as per schedule
 
 </section> -->
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/jquery-2.2.3.min.js"></script>
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.js"></script>
+      <script src="js/jquery-2.2.3.min.js"></script>
 
-<script>
+      <script>
 
-// Full list of configuration options available at:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-controls: true,
-progress: true,
-history: true,
-center: true,
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
 
-transition: 'none', // none/fade/slide/convex/concave/zoom
-backgroundTransition: 'none',
+          transition: 'none', // none/fade/slide/convex/concave/zoom
+          backgroundTransition: 'none',
 
-// Optional reveal.js plugins
-dependencies: [
-{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-{ src: 'plugin/zoom-js/zoom.js', async: true },
-{ src: 'plugin/notes/notes.js', async: true }
-]
-});
+          // Optional reveal.js plugins
+          dependencies: [
+            { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+            { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+            { src: 'plugin/notes/notes.js', async: true }
+          ]
+        });
 
-Reveal.addEventListener('slidechanged', function(event) {
-     if($(event.currentSlide).attr('data-background-iframe') &&
-      !$(event.currentSlide).data('nofront')) {
-          $('.reveal > .backgrounds').css('z-index', 1);
-          $('iframe').css('z-index', 2)
-          $('iframe').css('position', 'fixed')
-     } else {
-          $('.reveal > .backgrounds').css('z-index', 0);
-          $('iframe').css('z-index', 0)
-          $('iframe').css('position', 'static')
-     }
-});
+        Reveal.addEventListener('slidechanged', function (event) {
+          if ($(event.currentSlide).attr('data-background-iframe') &&
+            !$(event.currentSlide).data('nofront')) {
+            $('.reveal > .backgrounds').css('z-index', 1);
+            $('iframe').css('z-index', 2)
+            $('iframe').css('position', 'fixed')
+          } else {
+            $('.reveal > .backgrounds').css('z-index', 0);
+            $('iframe').css('z-index', 0)
+            $('iframe').css('position', 'static')
+          }
+        });
 
-</script>
+      </script>
 
 </body>
+
 </html>
